@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact us</title>
+  </head>
+  <body>
+  <ul>
+    <li> <emp> nisha.reetha30@gmail.com</emp></li>
+    <li> +97470030962 </li>
+  </ul>
+  <hr size="10" noshade>
+  <form action="mailto:nisha.reetha30@gmail.com" method="post">
+    <label>Enter Your Name:</label>
+    <input type="text" name="name" value=""><br>
+    <label>Select Gender :</label>
+    <input type="radio" name="gender" id="genderone" value="male"><label for="genderone">Male</label>
+    <input type="radio" name="gender" id="gendertwo" value="female"><label for="gendertwo">Female</label>
+    <br>
+    <label>Date of birth:</label>
+    <input type="date" name="dob" value=""><br>
+    <label for="courses">Select the course from the list:</label>
+    <input list="Course" name="courses" id="courses"/>
+    <datalist id="Course">
+  <option value="html">
+  <option value="css">
+  <option value="Javascript">
+  <option value="jquery">
+  </datalist>
+  <br>
+  <label>Type your Message:</label><br>
+  <textarea id="Message" rows="8" cols="80"></textarea><br>
+<button name="submit">Submit</button>
+
+  </form>
+
+  </body>
+</html>
