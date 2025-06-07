@@ -1,0 +1,217 @@
+
+.todo-container {
+  width: 550px;
+  margin: 40px auto;
+  background: #59b3ce;
+  border-radius: 12px;
+  padding: 30px 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+
+}
+
+.todo-container h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.todo-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.todo-input {
+  flex: 1;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.todo-input:focus {
+  outline: none;
+  border-color: #6a5acd;
+  box-shadow: 0 0 5px #6a5acd88;
+}
+
+.category-select {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+  font-size: 16px;
+  background-color: white;
+  transition: border-color 0.3s ease;
+}
+
+.category-select:focus {
+  outline: none;
+  border-color: #6a5acd;
+}
+
+.add-btn {
+  background-color: #6a5acd;
+  border: none;
+  padding: 0 20px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-btn:hover {
+  background-color: #574fcf;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-item {
+  background: white;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 0.05);
+  cursor: default;
+  transition: background-color 0.2s ease;
+}
+
+.todo-item:hover {
+  background-color: #f0f0ff;
+}
+
+.completed .todo-text {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.todo-text {
+  flex-grow: 1;
+  user-select: none;
+  position: relative;
+}
+
+.category-tag {
+  margin-left: 10px;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.category-tag.work {
+  background-color: #e0f0ff;
+  color: #0077cc;
+}
+
+.category-tag.personal {
+  background-color: #ffe6e6;
+  color: #cc0000;
+}
+
+.category-tag.shopping {
+  background-color: #eaffea;
+  color: #33aa33;
+}
+
+.delete-btn {
+  background-color: #ec492c;
+  width:80px;
+  height:30px;
+  border: none;
+  color: #1b1a1a;
+  font-size: 19px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0 5px;
+  line-height: 1;
+  transition: color 0.2s ease;
+  border: none;
+  border-radius: 10px;
+}
+
+.delete-btn:hover {
+  color: #cc0000;
+}
+
+.empty-msg {
+  text-align: center;
+  color: #666;
+  font-style: italic;
+  margin-top: 20px;
+}
+.edit-input {
+  padding: 5px;
+  font-size: 1rem;
+  margin-right: 5px;
+}
+
+.edit-btn, .save-btn, .cancel-btn {
+  margin-left: 5px;
+  padding: 4px 8px;
+  font-size: 0.9rem;
+}
+.edit-btn{
+  background-color: rgb(200, 202, 45);
+  color:black;
+  border: none;
+  width:60px;
+   font-size: 20px;
+  border-radius: 10px;
+    font-weight: bold;
+    margin-right: 3%;
+}
+
+.save-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.cancel-btn {
+  background-color: #f44336;
+  color: white;
+    border: none;
+  border-radius: 10px;
+}
+
+
+.filter-buttons {
+  margin: 1rem 0;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.filter-buttons button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #f0f0f0;
+  color: #333;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-weight: 500;
+}
+
+.filter-buttons button:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.filter-buttons button.active {
+  background-color: #007bff;
+  color: #fff;
+}
